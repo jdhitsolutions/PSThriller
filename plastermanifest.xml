@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Item" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>thriller</name>
+    <id>824233d4-518f-49ff-9619-e4c9806c6f52</id>
+    <version>0.1</version>
+    <title>Thriller Maker</title>
+    <description>Generate a new thriller book description.</description>
+    <author>Jeff Hicks</author>
+    <tags></tags>
+  </metadata>
+  <parameters>
+  
+  <parameter name="IsMarkdown" type="choice" prompt="Do you want to generate a markdown document?" default = '1'>
+        <choice label="&amp;Yes" help="Create a markdown document" value="Yes" />
+        <choice label="&amp;No" help="Create a plain text document" value="No" />
+    </parameter>
+  </parameters>
+  <content>
+  <message>
+
+  /|= Creating your new book =|\
+
+  </message>
+      <templateFile source='template.txt' destination='book.txt'/>
+      <message>Your book description, has been saved to '$PLASTER_DestinationPath\book.txt'</message>
+  </content>
+
+</plasterManifest>
