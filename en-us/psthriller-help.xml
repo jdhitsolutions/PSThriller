@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PSThrillerCharacters</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PSThrillerCharacters</command:noun>
+      <maml:description>
+        <maml:para>Get a thriller character set</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Query the thriller database file and create a character set for a new thriller.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PSThrillerCharacters</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>PSCustomObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-PSThrillerCharacters
+
+Hero             : Jack Hammer
+FormerOccupation : fighter pilot
+TheWoman         : Brandi
+HerStory         : a dentist
+Villain          : The Dark Council</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>New-PSThriller</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PSThrillerTitle</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PSThrillerTitle</command:noun>
+      <maml:description>
+        <maml:para>Get a new thriller title</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Query the thriller database file for a new thriller title. Or you can view all the potential titles.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PSThrillerTitle</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>List all available titles.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-PSThrillerTitle</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Count</maml:name>
+          <maml:Description>
+            <maml:para>Get the specified number of titles.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>All</maml:name>
+        <maml:Description>
+          <maml:para>List all available titles.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Count</maml:name>
+        <maml:Description>
+          <maml:para>Get the specified number of titles.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-PSThrillerTitle
+Killer Queen</dev:code>
+        <dev:remarks>
+          <maml:para>Get a single title.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-PSThrillerTitle -count 5
+The Paper Man
+Paradise City
+The OSI Model
+Old MacDonald's Farm
+The Silver Goose</dev:code>
+        <dev:remarks>
+          <maml:para>Get a multiple potential titles.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-PSThrillerTitle -all
+Eruption
+Rainbow in the Dark
+Full Stack
+...</dev:code>
+        <dev:remarks>
+          <maml:para>List potential titles.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>New-PSThriller</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PSThriller</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PSThriller</command:noun>
+      <maml:description>
+        <maml:para>Create a new thriller book description</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command will query data from a thriller database file and randomly generate a thriller book description. The default behavior is to create an object with all of the relevant data. But you can also format the output as a text document or even add markdown tags.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PSThriller</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AsDocument</maml:name>
+          <maml:Description>
+            <maml:para>Format as a text document.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AsMarkdown</maml:name>
+          <maml:Description>
+            <maml:para>Add markdown tags.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>New-PSThriller</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AsObject</maml:name>
+          <maml:Description>
+            <maml:para>Write an object to the pipeline with all of the necessary book data.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AsDocument</maml:name>
+        <maml:Description>
+          <maml:para>Format as a text document.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AsMarkdown</maml:name>
+        <maml:Description>
+          <maml:para>Add markdown tags.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AsObject</maml:name>
+        <maml:Description>
+          <maml:para>Write an object to the pipeline with all of the necessary book data.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>PSCustomObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-PSThriller
+
+
+Title     : Master of Puppets
+Author    : James Achilles
+Hero      : Chip Schottz
+Former    : billionaire playboy
+Villain   : The Brotherhood
+TheWoman  : Betty, a speech-language pathologist
+Locations : {the International Space Station, Paris}
+Blurb     : This exciting new tale from the best-selling author of Reboot and The Game of Death,
+            throws former billionaire playboy Chip Schottz in the middle of an extraordinary adventure that will push
+            him beyond the breaking point. While on a seemingly idyllic holiday, Chip quickly finds
+            himself trapped in the midst of a series of catastrophic events unleashed by the sinister
+            and shadowy organization known only as The Brotherhood, that threaten not only his sanity but the
+            very fabric of civilization as we know it.
+
+            Haunted by the tragic loss of his grandmother, Chip must overcome a complex and diabolical plot 
+            surrounding the
+            mystery of Jar-Jar Binks. Swept up by forces unseen, Betty, a speech-language pathologist,
+            is paired with Chip in an uneasy alliance that will put them to the ultimate test.
+
+            Set amidst the exotic backdrops of the International Space Station and Paris, Chip and
+            Betty will make a discovery that will change their world and ours, forever.
+            Hunted relentlessly by The Brotherhood, Chip and Betty have but one chance to stop them. 
+
+            Can they do it before time runs out?
+Quotes    : {@{Quote=You won't be disappointed.; Author=Robert Ludlum}, @{Quote=This will make one helluva movie!; 
+            Author=Aloysius Pendergast}, @{Quote=You won't be bored.; Author=L.T. Ryan}}</dev:code>
+        <dev:remarks>
+          <maml:para>The default object-oriented output.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-PSThriller -asdocument
+
+Scrum
+-----
+by Dewey Thor
+
+This exciting new tale from the best-selling author of 'The Drive-In' and 'Easy Living',
+throws former CIA agent Jack Frost in the middle of an extraordinary adventure that will push
+him beyond the breaking point. While on a seemingly idyllic holiday, Jack quickly finds
+himself trapped in the midst of a series of catastrophic events unleashed by the sinister
+and shadowy organization known only as The Book of Faces, that threaten not only his sanity but the
+very fabric of civilization as we know it.
+
+Haunted by a missing library book, Jack must overcome a complex and diabolical plot surrounding the
+mystery of Machu Picchu. Swept up by forces unseen, Layla, an audiologist,
+is paired with Jack in an uneasy alliance that will put them to the ultimate test.
+
+Set amidst the exotic backdrops of Aruba and Newark, Jack and
+Layla will make a discovery that will change their world and ours, forever.
+Hunted relentlessly by The Book of Faces, Jack and Layla have but one chance to stop them.
+
+Can they do it before time runs out?
+
+"What in the world did I just read? Awesome."
+  -- James Rollins
+
+"The. Best. Ever."
+  -- Robert Ludlum
+
+"The hero that we need and deserve."
+  -- Tom Clancy</dev:code>
+        <dev:remarks>
+          <maml:para>Format as a text document.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-PSThriller -asmarkdown
+
+# Eruption
+
+## by Kyle Preston
+
+This exciting new tale from the best-selling author of [Kill or Be Killed]() and [The Hidden Door](),
+throws former Scotland Yard inspector Thomas Tank in the middle of an extraordinary adventure that will push
+him beyond the breaking point. While on a seemingly idyllic holiday, Thomas quickly finds
+himself trapped in the midst of a series of catastrophic events unleashed by the sinister
+and shadowy organization known only as The Dark Council, that threaten not only his sanity but the
+very fabric of civilization as we know it.
+
+Haunted by the voices in his head, Thomas must overcome a complex and diabolical plot surrounding the
+mystery of Microsoft HoloLens. Swept up by forces unseen, Beth, a diner waitress,
+is paired with Thomas in an uneasy alliance that will put them to the ultimate test.
+
+Set amidst the exotic backdrops of Niagara Falls and the International Space Station, Thomas and
+Beth will make a discovery that will change their world and ours, forever.
+Hunted relentlessly by The Dark Council, Thomas and Beth have but one chance to stop them.
+
+Can they do it before time runs out?
+
+"_Adrenaline rush_"
+-- James Patterson
+
+"_I am a fan._"
+-- Clive Cussler
+
+"_Smart, sassy and sexy._"
+-- Jack Ryan</dev:code>
+        <dev:remarks>
+          <maml:para>Format the output as a markdown document.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-PSThriller -AsMarkdown | Show-Markdown</dev:code>
+        <dev:remarks>
+          <maml:para>In PowerShell Core, you can run a command like this generate a markdow document and then have PowerShell display it in the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-PSThrillerTitle</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-PSThrillerCharacters</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
