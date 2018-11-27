@@ -130,4 +130,4 @@ This is the process I am teaching everyone. There's really only a little bit of 
 
 Again, the purpose of this module is educational, and perhaps a little amusement. I encourage you to take the time to go through the code and see how this all works. I don't intend to publish it to the PowerShell Gallery, but I will create release files here. Or you can clone or download the repository. If you have questions, comments or any other feedback, please use the repository's Issues section.
 
-_Last Updated 20 November, 2018_
+_Last Updated 26 November, 2018_

@@ -50,6 +50,14 @@
         "Running on Empty",
         "The Drive-Thru",
         "Paradise City",
+        "Checkmate",
+        "The Pawn",
+        "The Last Mission",
+        "For Her Eyes Only",
+        "Die and Let Die",
+        "Thunderbolt",
+        "The Wall",
+        "The Genesis Machine",
         "The Hidden Door",
         "No Yesterdays",
         "A Net of Ether",
@@ -117,7 +125,11 @@
         "Chaos Theory",
         "Child in Time",
         "Private Key",
-        "Shark on a Wire"
+        "Shark on a Wire",
+        "Highway Star",
+        "The Beta Test",
+        "Alpha Code",
+        "Change Log"
     ],
     "Names": [
         "Tim Burr",
@@ -132,7 +144,7 @@
         "Wayne Manner",
         "Chris Massy",
         "Alan Fresco",
-        "Chip Schottz",
+        "Chip Schotz",
         "Bobby Bilder",
         "Carl Marks",
         "Sandy Bottoms",
@@ -154,7 +166,13 @@
         "Dwayne Pipes",
         "Matt Frame",
         "Ed Ward",
-        "Jay Walker"
+        "Jay Walker",
+        "Jerry Mander",
+        "Paul Bearer",
+        "Alex DeLion",
+        "James Beam",
+        "Mac Callan",
+        "Ted Tawks"
     ],
     "Formers": [
         "Navy SEAL",
@@ -230,7 +248,8 @@
         "The Mutex",
         "The Managers",
         "The Office",
-        "Change Log"
+        "The Back Office",
+        "The Management"
     ],
     "Members": [
         "son",
@@ -244,7 +263,14 @@
         "sister",
         "brother",
         "twin",
+        "godfather",
+        "godmother",
+        "priest",
+        "rabbi",
         "uncle",
+        "puppy",
+        "kitten",
+        "godparents",
         "grandmother",
         "partner",
         "lover",
@@ -252,7 +278,10 @@
         "sensei",
         "psychologist",
         "parents",
-        "parakeet"
+        "parakeet",
+        "cat",
+        "turtle",
+        "mistress"
     ],
     "Backdrops": [
         "North Dakota",
@@ -267,6 +296,7 @@
         "the Amazon rain forest",
         "Disney World",
         "the Gobi Desert",
+        "Tahiti",
         "Rio",
         "Macau",
         "North Korea",
@@ -276,6 +306,8 @@
         "the Yukon",
         "Newark",
         "Poughkeepsie",
+        "Cleveland",
+        "The Great Wall of China",
         "Paris",
         "the Acropolis",
         "the Taj Mahal",
@@ -300,7 +332,12 @@
         "Tierra del Fuego",
         "Tasmania",
         "Saskatoon",
-        "Scranton"
+        "Scranton",
+        "El Paso",
+        "Fargo",
+        "Gibralter",
+        "the Amazon rain forest",
+        "the Louisiana bayous"
     ],
     "LoveInterests": [
         "Sheila",
@@ -330,7 +367,9 @@
         "Ginger",
         "Mary Ann",
         "Samantha",
-        "Esmerelda"
+        "Esmerelda",
+        "Mandy",
+        "Hope"
     ],
     "LoveBackStories": [
         "a former student",
@@ -370,7 +409,11 @@
         "a flamenco dancer",
         "a pastry chef",
         "an astrophysicist",
-        "a concert pianist"
+        "a concert pianist",
+        "a concert cellist",
+        "a hypno-therapist",
+        "a nun",
+        "a soccer mom"
     ],
     "Tragedies": [
         "the tragic loss of his _family",
@@ -382,6 +425,8 @@
         "the fear of water",
         "an irrational fear of clowns",
         "an unspeakable terror",
+        "last night\u0027s dinner",
+        "a nagging suspicion",
         "the ghost of Christmas Past",
         "climate change",
         "the fear of missing out",
@@ -390,7 +435,10 @@
         "switching to decaf coffee",
         "the cat next door",
         "a childhood tragedy",
-        "a fear of zombies"
+        "a fear of zombies",
+        "hair loss",
+        "halitosis",
+        "a love of Broadway musicals"
     ],
     "Mysteries": [
         "Clippy",
@@ -408,6 +456,7 @@
         "cloud services",
         "daylight savings time",
         "womens\u0027 dress sizes",
+        "womens\u0027 shoes",
         "public key infrastructure",
         "his lost car keys",
         "the golden fleece",
@@ -421,6 +470,7 @@
         "the alternate President",
         "The Upside Down",
         "the secret stash",
+        "The secret President",
         "the Kardashians",
         "Yammer",
         "Sharepoint",
@@ -431,7 +481,15 @@
         "bitcoin",
         "cryptocurrency",
         "the missing sock",
-        "the hidden repository"
+        "the hidden repository",
+        "blockchain",
+        "teenagers",
+        "the flat earth",
+        "advanced calculus",
+        "White Castle hamburgers",
+        "The Bermuda Triangle",
+        "Area 51",
+        "the North Pole"
     ],
     "quotes": [
         "His best work yet!",
@@ -472,6 +530,12 @@
         "A high octane thriller",
         "4 stars!",
         "A gripping story by the next James Rollins",
-        "A fiendishly good tale"
+        "A fiendishly good tale",
+        "Steal this book.",
+        "Unbelievable",
+        "I didn't want it to end.",
+        "A frightening tale for our times.",
+        "A roller-coaster of action and adventure.",
+        "Something for the teen-age boy in all of us."
     ]
 }
