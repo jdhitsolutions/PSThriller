@@ -31,7 +31,7 @@
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>PSCustomObject</maml:name>
+          <maml:name>PSThrillerCharacter</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -48,11 +48,9 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-PSThrillerCharacters
 
-Hero             : Jack Hammer
-FormerOccupation : fighter pilot
-TheWoman         : Brandi
-HerStory         : a dentist
-Villain          : The Dark Council</dev:code>
+Hero        FormerOccupation               TheWoman HerStory          Villain
+----        ----------------               -------- --------          -------
+Thomas Tank FBI Hostage Rescue Team member Betty    a nursing student The Iron …</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
@@ -82,9 +80,9 @@ Villain          : The Dark Council</dev:code>
         <maml:name>Get-PSThrillerTitle</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>List all available titles.</maml:para>
-          </maml:Description>
+          </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
             <maml:uri />
@@ -96,9 +94,9 @@ Villain          : The Dark Council</dev:code>
         <maml:name>Get-PSThrillerTitle</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Count</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Get the specified number of titles.</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
             <maml:name>Int32</maml:name>
@@ -111,9 +109,9 @@ Villain          : The Dark Council</dev:code>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>List all available titles.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
@@ -123,9 +121,9 @@ Villain          : The Dark Council</dev:code>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Count</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Get the specified number of titles.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
           <maml:name>Int32</maml:name>
@@ -217,27 +215,30 @@ Full Stack
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command will query data from a thriller database file and randomly generate a thriller book description. The default behavior is to create an object with all of the relevant data. But you can also format the output as a text document or even add markdown tags.</maml:para>
+      <maml:para>This command will query data from a thriller database file and randomly generate a thriller book description and synopsis. The default behavior is to create an object with all of the relevant data. But you can also format the output as a text document or even add markdown tags.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>New-PSThriller</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AsDocument</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Format as a text document.</maml:para>
-          </maml:Description>
+          </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>New-PSThriller</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AsMarkdown</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Add markdown tags.</maml:para>
-          </maml:Description>
+          </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
             <maml:uri />
@@ -249,9 +250,9 @@ Full Stack
         <maml:name>New-PSThriller</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AsObject</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Write an object to the pipeline with all of the necessary book data.</maml:para>
-          </maml:Description>
+          </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
             <maml:uri />
@@ -263,9 +264,9 @@ Full Stack
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AsDocument</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Format as a text document.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
@@ -275,9 +276,9 @@ Full Stack
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AsMarkdown</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Add markdown tags.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
@@ -287,9 +288,9 @@ Full Stack
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AsObject</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Write an object to the pipeline with all of the necessary book data.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
@@ -311,7 +312,7 @@ Full Stack
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>PSCustomObject</maml:name>
+          <maml:name>PSThriller</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -336,7 +337,6 @@ Full Stack
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-PSThriller
 
-
 Title     : Master of Puppets
 Author    : James Achilles
 Hero      : Chip Schottz
@@ -345,31 +345,24 @@ Villain   : The Brotherhood
 TheWoman  : Betty, a speech-language pathologist
 Locations : {the International Space Station, Paris}
 Blurb     : This exciting new tale from the best-selling author of Reboot and The Game of Death,
-            throws former billionaire playboy Chip Schottz in the middle of an extraordinary adventure that will push
-            him beyond the breaking point. While on a seemingly idyllic holiday, Chip quickly finds
-            himself trapped in the midst of a series of catastrophic events unleashed by the sinister
-            and shadowy organization known only as The Brotherhood, that threaten not only his sanity but the
-            very fabric of civilization as we know it.
+            throws former billionaire playboy Chip Schottz in the middle of an extraordinary adventure that will push him beyond the breaking point. While on a seemingly idyllic holiday, Chip quickly finds himself trapped in the midst of a series of catastrophic events unleashed by the sinister and shadowy organization known only as The Brotherhood, that threaten not only his sanity but the very fabric of civilization as we know it.
 
-            Haunted by the tragic loss of his grandmother, Chip must overcome a complex and diabolical plot 
-            surrounding the
-            mystery of Jar-Jar Binks. Swept up by forces unseen, Betty, a speech-language pathologist,
-            is paired with Chip in an uneasy alliance that will put them to the ultimate test.
+            Haunted by the tragic loss of his grandmother, Chip must overcome a complex and diabolical plot surrounding the mystery of Jar-Jar Binks. Swept up by forces unseen, Betty, a speech-language pathologist, is paired with Chip in an uneasy alliance that will put them to the ultimate test.
 
             Set amidst the exotic backdrops of the International Space Station and Paris, Chip and
             Betty will make a discovery that will change their world and ours, forever.
-            Hunted relentlessly by The Brotherhood, Chip and Betty have but one chance to stop them. 
+            Hunted relentlessly by The Brotherhood, Chip and Betty have but one chance to stop them.
 
             Can they do it before time runs out?
-Quotes    : {@{Quote=You won't be disappointed.; Author=Robert Ludlum}, @{Quote=This will make one helluva movie!; 
-            Author=Aloysius Pendergast}, @{Quote=You won't be bored.; Author=L.T. Ryan}}</dev:code>
+Quotes    : {@{Quote=You won't be disappointed.; Author=Robert Ludlum}, @{Quote=This will make one
+            helluva movie!; Author=Aloysius Pendergast}, @{Quote=You won't be bored.; Author=L.T. Ryan}}</dev:code>
         <dev:remarks>
           <maml:para>The default object-oriented output.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-PSThriller -asdocument
+        <dev:code>PS C:\&gt; New-PSThriller -AsDocument
 
 Scrum
 -----
@@ -383,8 +376,7 @@ and shadowy organization known only as The Book of Faces, that threaten not only
 very fabric of civilization as we know it.
 
 Haunted by a missing library book, Jack must overcome a complex and diabolical plot surrounding the
-mystery of Machu Picchu. Swept up by forces unseen, Layla, an audiologist,
-is paired with Jack in an uneasy alliance that will put them to the ultimate test.
+mystery of Machu Picchu. Swept up by forces unseen, Layla, an audiologist, is paired with Jack in an uneasy alliance that will put them to the ultimate test.
 
 Set amidst the exotic backdrops of Aruba and Newark, Jack and
 Layla will make a discovery that will change their world and ours, forever.
@@ -406,37 +398,37 @@ Can they do it before time runs out?
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-PSThriller -asmarkdown
+        <dev:code>PS C:\&gt; New-PSThriller -AsMarkdown
 
-# Eruption
+# Holy Diver
 
-## by Kyle Preston
+## by David Preston
 
-This exciting new tale from the best-selling author of [Kill or Be Killed]() and [The Hidden Door](),
-throws former Scotland Yard inspector Thomas Tank in the middle of an extraordinary adventure that will push
-him beyond the breaking point. While on a seemingly idyllic holiday, Thomas quickly finds
+This exciting new tale from the best-selling author of [The Bourbon Betrayal]() and [The White Room](),
+throws former Special Forces operator Carl Marks in the middle of an extraordinary adventure that will push
+them beyond the breaking point. While on a seemingly idyllic holiday, Carl quickly finds
 himself trapped in the midst of a series of catastrophic events unleashed by the sinister
-and shadowy organization known only as The Dark Council, that threaten not only his sanity but the
+and shadowy organization known only as The War Pigs, that threaten not only his sanity but the
 very fabric of civilization as we know it.
 
-Haunted by the voices in his head, Thomas must overcome a complex and diabolical plot surrounding the
-mystery of Microsoft HoloLens. Swept up by forces unseen, Beth, a diner waitress,
-is paired with Thomas in an uneasy alliance that will put them to the ultimate test.
+Haunted by a nagging suspicion, Carl must overcome a complex and diabolical plot surrounding the
+mystery of teenagers. Swept up by forces unseen, Beth, a concert cellist,
+is paired with Carl in an uneasy alliance that will put them to the ultimate test.
 
-Set amidst the exotic backdrops of Niagara Falls and the International Space Station, Thomas and
+Set amidst the exotic backdrops of Singapore and Tierra del Fuego, Carl and
 Beth will make a discovery that will change their world and ours, forever.
-Hunted relentlessly by The Dark Council, Thomas and Beth have but one chance to stop them.
+Hunted relentlessly by The War Pigs, Carl and Beth have but one chance to stop them.
 
 Can they do it before time runs out?
 
-"_Adrenaline rush_"
--- James Patterson
+"_Gripping and compelling._"
+-- Dewey Andreas
 
-"_I am a fan._"
--- Clive Cussler
+"_Action. Adventure. Awesome._"
+-- Blake Crouch
 
-"_Smart, sassy and sexy._"
--- Jack Ryan</dev:code>
+"_A gripping story by the next James Rollins_"
+-- Gideon Crew</dev:code>
         <dev:remarks>
           <maml:para>Format the output as a markdown document.</maml:para>
         </dev:remarks>
@@ -445,7 +437,7 @@ Can they do it before time runs out?
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-PSThriller -AsMarkdown | Show-Markdown</dev:code>
         <dev:remarks>
-          <maml:para>In PowerShell Core, you can run a command like this generate a markdow document and then have PowerShell display it in the console.</maml:para>
+          <maml:para>In PowerShell 7, you can run a command like this generate a Markdown document and then have PowerShell display it in the console.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>

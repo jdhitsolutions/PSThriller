@@ -28,11 +28,9 @@ Query the thriller database file and create a character set for a new thriller.
 ```powershell
 PS C:\> Get-PSThrillerCharacters
 
-Hero             : Jack Hammer
-FormerOccupation : fighter pilot
-TheWoman         : Brandi
-HerStory         : a dentist
-Villain          : The Dark Council
+Hero        FormerOccupation               TheWoman HerStory          Villain
+----        ----------------               -------- --------          -------
+Thomas Tank FBI Hostage Rescue Team member Betty    a nursing student The Iron …
 ```
 
 ## PARAMETERS
@@ -48,7 +46,7 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 
 ## OUTPUTS
 
-### PSCustomObject
+### PSThrillerCharacter
 
 ## NOTES
 
@@ -56,4 +54,4 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 ## RELATED LINKS
 
-[New-PSThriller]()
+[New-PSThriller](New-PSThriller.md)

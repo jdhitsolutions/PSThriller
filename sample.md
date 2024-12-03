@@ -1,29 +1,30 @@
-# The Xipher Cipher
+Child in Time
+-------------
+by Tom Archer
 
-## by Dewey Flynn
-
-This exciting new tale from the best-selling author of [Master of Puppets]() and [Killer Queen](),
-throws former LA County Coroner Chuck Stakes in the middle of an extraordinary adventure that will push
-him beyond the breaking point. While on a seemingly idyllic holiday, Chuck quickly finds
+This exciting new tale from the best-selling author of 'Protocol' and 'The Silver Goose',
+throws former counter-terrorism specialist Chris Massy in the middle of an extraordinary adventure that will push
+them beyond the breaking point. While on a seemingly idyllic holiday, Chris quickly finds
 himself trapped in the midst of a series of catastrophic events unleashed by the sinister
-and shadowy organization known only as ChaOS, that threaten not only his sanity but the
+and shadowy organization known only as The Office, that threaten not only his sanity but the
 very fabric of civilization as we know it.
 
-Haunted by a missing library book, Chuck must overcome a complex and diabolical plot surrounding the
-mystery of womens' dress sizes. Swept up by forces unseen, Betty, a Harvard symbologist,
-is paired with Chuck in an uneasy alliance that will put them to the ultimate test.
+Haunted by the fear of water, Chris must overcome a complex and diabolical plot surrounding the
+mystery of chocolate covered bacon. Swept up by forces unseen, Siri, a dentist,
+is paired with Chris in an uneasy alliance that will put them to the ultimate test.
 
-Set amidst the exotic backdrops of Rio and Redmond, Chuck and
-Betty will make a discovery that will change their world and ours, forever.
-Hunted relentlessly by ChaOS, Chuck and Betty have but one chance to stop them.
+Set amidst the exotic backdrops of the Egyptian pyramids and Newark, Chris and
+Siri will make a discovery that will change their world and ours, forever.
+Hunted relentlessly by The Office, Chris and Siri have but one chance to stop them.
 
 Can they do it before time runs out?
 
-"_I was spellbound._"
--- Brad Meltzer
+"The hero that we need and deserve."
+  -- Bear Logan
 
-"_Stop reading these blurbs and buy this book._"
--- Lee Child
+"You won't be bored."
+  -- Jason Bourne
 
-"_The hero that we need and deserve._"
--- David Archer
+"A frightening tale for our times."
+  -- Mitch Rapp
+

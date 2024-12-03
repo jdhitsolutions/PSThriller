@@ -120,4 +120,4 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 ## RELATED LINKS
 
-[New-PSThriller]()
+[New-PSThriller](New-PSThriller.md)
